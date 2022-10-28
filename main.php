@@ -21,7 +21,7 @@ $curl = curl_init();
 curl_setopt($curl, CURLOPT_URL, "https://jira.hilti.com/plugins/servlet/twofactor/public/pinvalidation?target=/");
 curl_setopt($curl, CURLOPT_FOLLOWLOCATION, true);
 curl_setopt($curl, CURLOPT_RETURNTRANSFER, true);
-curl_setopt($curl, CURLOPT_POST);
+curl_setopt($curl, CURLOPT_POST, true);
 curl_setopt($curl, CURLOPT_POSTFIELDS, array("2fpin=121212&atl_token=%24atl_token&twofalogin=pinlogin"));
 curl_setopt($curl, CURLOPT_HEADER, true);
 $headers = array(
